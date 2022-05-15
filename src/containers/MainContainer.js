@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "../components/Header";
+import Intro from "../components/Intro";
 import ProjectList from "../components/ProjectList";
 
 const MainContainer = ()=>
 {
    return(
     <>
-        <Header/>
+        <Intro/>
         <ProjectList/>
    </>
    );
