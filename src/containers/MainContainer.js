@@ -7,7 +7,9 @@ const MainContainer = ()=>
    return(
     <>
         <Intro/>
+        <div id="list-container">
         <ProjectList/>
+        </div>
    </>
    );
 }
