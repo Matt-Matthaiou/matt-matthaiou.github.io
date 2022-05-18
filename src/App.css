@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  position: absolute;
+  position: relative;
  
 }
 
@@ -22,10 +22,21 @@ h2 {
   
 }
 
-#list-container {
+#intro-container {
+  color: white;
+  display: grid;
+  width: 100%;
+  grid-template-rows: repeat(2, 1fr);
   
 }
 
+#box {
+  border: 1px solid #333333;
+  border-top-style: dotted;
+  border-bottom-color: rgba(238, 75, 157, 0.288);
+  width: auto;
+  grid-template-columns: (2, 1fr);
+}
 
 #project-list > li {
   color: white;
