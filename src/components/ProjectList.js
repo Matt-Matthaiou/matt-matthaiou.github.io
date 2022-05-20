@@ -3,7 +3,10 @@ import React from "react";
 const ProjectList = ()=>
 {
     return(
-       
+            <>
+            
+            <div >
+            <h1 id="project-header">My Projects:</h1>
             <ul id="project-list">
                 <li>
                     <h3>Target Practice Trading</h3>
@@ -28,6 +31,8 @@ const ProjectList = ()=>
                     </div>
                 </li>
             </ul>
+            </div>
+            </>
       
     )
 }

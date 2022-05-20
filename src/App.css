@@ -4,8 +4,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
  
 }
 
@@ -15,10 +16,15 @@ h2 {
 
 #project-list {
   display: flex;
-  justify-content:space-evenly;
+  justify-content:flex-start;
   list-style-type:none;
   list-style-type: none;
-
+  position: relative;
+  width: 91%;
+  left: 9%;
+  padding: 0;
+  gap: 10%;
+  
   
 }
 
@@ -31,19 +37,22 @@ h2 {
 }
 
 #box {
-  border: 1px solid #333333;
-  border-top-style: dotted;
+  border: 5px solid #333333;
   border-bottom-color: rgba(238, 75, 157, 0.288);
-  width: auto;
+  width: 50%;
   grid-template-columns: (2, 1fr);
+  position: relative;
+  left: 20%;
+  right: 20%;
+  /* margin-left: 20%;
+  margin-right: 20%; */
 }
 
 #project-list > li {
   color: white;
   display: flex;
   flex-direction: column;
-  margin:auto;
-  
+  /* margin:auto; */
   
 }
 
@@ -59,13 +68,26 @@ h2 {
   background-color: #4CAF50;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 9px rgb(215, 23, 23);
 }
 
 .button:hover {background-color: #3e8e41}
 
 .button:active {
   background-color: #3e8e41;
-  box-shadow: 0 5px #666;
+  box-shadow: 0 5px rgb(165, 10, 10);
   transform: translateY(4px);
+}
+
+#project-header {
+  color: white;
+  position: relative;
+  left: 9%;
+  width: 200px;
+  
+  
+}
+
+#intro {
+  margin: 5%;
 }
