@@ -1,13 +1,20 @@
 
 #page {
   background-image: url("http://extendthemes.com/demos/mesmerize-pro-portfolio/wp-content/uploads/sites/16/2016/06/cropped-background-2726039-6x4.jpg");
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
-  position: absolute;
- 
+  position: absolute; */
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-width: 100vh;
+  margin-bottom: -2%;
+  
 }
 
 h2 {
@@ -15,15 +22,18 @@ h2 {
 }
 
 #project-list {
-  display: flex;
-  justify-content:flex-start;
+  /* display: flex;
+  justify-content:flex-start; */
+  display: grid;
   list-style-type:none;
-  list-style-type: none;
   position: relative;
   width: 91%;
   left: 9%;
   padding: 0;
-  gap: 10%;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  
+  
   
   
 }
@@ -68,7 +78,7 @@ h2 {
   background-color: #4CAF50;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px rgb(215, 23, 23);
+  /* box-shadow: 0 9px rgb(215, 23, 23); */
 }
 
 .button:hover {background-color: #3e8e41}
